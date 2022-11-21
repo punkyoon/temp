@@ -2,7 +2,12 @@
 const nextConfig = {
   experimental: { appDir: true, },
   reactStrictMode: true,
-  images: { remotePatterns: [ { pathname: '/temp/**', }, ], unoptimized: true, },
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'punkyoon.github.io', port: '', pathname: '/temp/**', },
+    ],
+    unoptimized: true,
+  },
 }
 
 module.exports = nextConfig
