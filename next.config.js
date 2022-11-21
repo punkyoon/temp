@@ -11,8 +11,8 @@ const nextConfig = {
   experimental: { appDir: true, },
   reactStrictMode: true,
   images: {
-    loader: 'custom',
-    loaderFile: './app/utils/loader.js',
+    // loader: 'custom',
+    // loaderFile: './app/utils/loader.js',
     unoptimized: true,
   },
 }
