@@ -24,4 +24,3 @@ const Base = styled.div`
     }
   }
 `;
-
