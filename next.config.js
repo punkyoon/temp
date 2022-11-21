@@ -1,13 +1,20 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === 'production'
+
+const assetPrefix = isProd ? '/temp/' : ''
+const basePath = isProd ? '/temp' : ''
+
 const nextConfig = {
-  assetPrefix: '/temp/',
-  basePath: '/temp',
+  assetPrefix,
+  basePath,
   experimental: { appDir: true, },
   reactStrictMode: true,
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'punkyoon.github.io', port: '', pathname: '/temp/**', },
     ],
+    path: basePath,
     unoptimized: true,
   },
 }
