@@ -6,8 +6,8 @@ const assetPrefix = isProd ? '/temp/' : ''
 const basePath = isProd ? '/temp' : ''
 
 const nextConfig = {
-  assetPrefix,
-  basePath,
+  assetPrefix : assetPrefix,
+  basePath : basePath,
   experimental: { appDir: true, },
   reactStrictMode: true,
   images: {
