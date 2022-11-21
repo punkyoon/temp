@@ -1,8 +1,6 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
 
-import customImageLoader from '~/utils/loader';
-
 type Props = {
   alt: string,
   imageUrl: string,
@@ -13,7 +11,7 @@ type Props = {
 export default function InfiniteSpinImage({ alt, imageUrl, height, width  }: Props) {
   return (
     <Base>
-      <Image loader={customImageLoader} alt={alt} src={imageUrl} height={height} width={width} />
+      <Image alt={alt} src={imageUrl} height={height} width={width} />
     </Base>
   );
 }

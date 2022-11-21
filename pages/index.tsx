@@ -5,32 +5,31 @@ import AgreementButton from '~/components/AgreementButton';
 import InfiniteSpinImage from '~/components/InfiniteSpinImage';
 import TryButton from '~/components/TryButton';
 import { imageBasePath } from '~/utils/globalConfig';
-import customImageLoader from '~/utils/loader';
 
 export default function IndexPage() {
   return (
     <Base>
       <CenterWrapper>
-        <InfiniteSpinImage alt='환영하는' imageUrl={'/images/2.png'} height={400} width={700} />
+        <InfiniteSpinImage alt='환영하는' imageUrl={`${imageBasePath}/images/2.png`} height={400} width={700} />
       </CenterWrapper>
 
       <NunuWrapper>
-        <Image loader={customImageLoader} src={`${imageBasePath}/images/1.png`} alt="누누씨1" width="300" height="300" />
-        <Image loader={customImageLoader} src={`${imageBasePath}/images/3.png`} alt="누누씨2" width="300" height="300" />
-        <Image loader={customImageLoader} src={`${imageBasePath}/images/4.png`} alt="누누씨3" width="300" height="300" />
+        <Image src={`${imageBasePath}/images/1.png`} alt="누누씨1" width="300" height="300" />
+        <Image src={`${imageBasePath}/images/3.png`} alt="누누씨2" width="300" height="300" />
+        <Image src={`${imageBasePath}/images/4.png`} alt="누누씨3" width="300" height="300" />
       </NunuWrapper>
       <PhantomWrapper>
-        <Image loader={customImageLoader} src={`${imageBasePath}/images/8.png`} alt="팬텀1" width="300" height="300" />
-        <Image loader={customImageLoader} src={`${imageBasePath}/images/9.png`} alt="팬텀2" width="300" height="300" />
+        <Image src={`${imageBasePath}/images/8.png`} alt="팬텀1" width="300" height="300" />
+        <Image src={`${imageBasePath}/images/9.png`} alt="팬텀2" width="300" height="300" />
       </PhantomWrapper>
-      <Image loader={customImageLoader} src={`/images/5.png`} alt="누누씨4" width="300" height="300" />
-      <Image loader={customImageLoader} src={`/images/6.png`} alt="누누씨5" width="300" height="300" />
-      <Image loader={customImageLoader} src={`/images/7.png`} alt="누누씨6" width="300" height="300" />
-      <Image loader={customImageLoader} src={`/images/10.png`} alt="으악새1" width="150" height="150" />
-      <Image loader={customImageLoader} src={`/images/11.png`} alt="으악새2" width="150" height="150" />
-      <Image loader={customImageLoader} src={`/images/12.png`} alt="으악새3" width="150" height="150" />
-      <Image loader={customImageLoader} src={`/images/13.jpeg`} alt="누누씨7" width="400" height="400" />
-      <Image loader={customImageLoader} src={`/images/14.jpeg`} alt="누누씨8" width="500" height="500" />
+      <Image src={`${imageBasePath}/images/5.png`} alt="누누씨4" width="300" height="300" />
+      <Image src={`${imageBasePath}/images/6.png`} alt="누누씨5" width="300" height="300" />
+      <Image src={`${imageBasePath}/images/7.png`} alt="누누씨6" width="300" height="300" />
+      <Image src={`${imageBasePath}/images/10.png`} alt="으악새1" width="150" height="150" />
+      <Image src={`${imageBasePath}/images/11.png`} alt="으악새2" width="150" height="150" />
+      <Image src={`${imageBasePath}/images/12.png`} alt="으악새3" width="150" height="150" />
+      <Image src={`${imageBasePath}/images/13.jpeg`} alt="누누씨7" width="400" height="400" />
+      <Image src={`${imageBasePath}/images/14.jpeg`} alt="누누씨8" width="500" height="500" />
 
       <LeftBottomWrapper>
         <TryButton />
